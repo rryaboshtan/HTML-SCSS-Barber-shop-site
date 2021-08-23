@@ -416,7 +416,8 @@ nav .menuBtn img {
   border-radius: 7px;
 }
 
-.service-box .single-service .overlay {
+.service-box .single-service::after {
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -433,7 +434,7 @@ nav .menuBtn img {
   transition: 1s;
 }
 
-.service-box .single-service:hover .overlay {
+.service-box .single-service:hover::after {
   opacity: 1;
 }
 
