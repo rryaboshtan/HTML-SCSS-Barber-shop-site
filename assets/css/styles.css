@@ -94,7 +94,9 @@ img {
 }
 
 body {
+  letter-spacing: .8px;
   font-size: 1.3rem;
+  line-height: 25px;
 }
 
 .banner {
@@ -300,18 +302,19 @@ nav .menuBtn img {
   margin-bottom: 40px;
 }
 
-.feature-box .features-desc .feature-icon .fa {
-  width: 50px;
-  height: 50px;
+.feature-box .features-desc .fa {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
   font-size: 30px;
   line-height: 50px;
-  border-radius: 8px;
   color: #009688;
-  border: 1px solid #009688;
 }
 
 .feature-box .features-desc .feature-text p {
-  padding: 0 0 0 10px;
   text-align: justify;
 }
 
@@ -723,7 +726,7 @@ nav .menuBtn img {
 }
 
 .footer .social-links p {
-  font-size: 12px;
+  font-size: 15px;
   margin-top: 20px;
 }
 
@@ -732,7 +735,7 @@ nav .menuBtn img {
   .footer-right {
     -ms-flex-preferred-size: 200%;
         flex-basis: 200%;
-    font-size: 14px;
+    font-size: 16px;
   }
   .footer-img {
     top: 25%;

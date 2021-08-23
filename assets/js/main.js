@@ -15,3 +15,6 @@ const showHideNav = () => {
 }
 
 menuBtn.addEventListener('click', showHideNav)
+
+
+const myLazy = new LazyLoad({ elements_selector: ".photo" });
