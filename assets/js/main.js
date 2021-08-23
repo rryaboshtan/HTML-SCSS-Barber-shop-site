@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('.menuBtn')
 const nav = document.querySelector('nav')
 const menu = document.getElementById('menu')
+nav.style.right = "-250px";
 
 const showHideNav = () => {
     if (nav.style.right === '-250px') {
@@ -14,4 +15,3 @@ const showHideNav = () => {
 }
 
 menuBtn.addEventListener('click', showHideNav)
-
