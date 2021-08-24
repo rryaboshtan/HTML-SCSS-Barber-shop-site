@@ -92,7 +92,7 @@ img {
     height: auto;
 }
 body {
-     letter-spacing: .8px;
+    letter-spacing: 0.8px;
     font-size: 1.1rem;
     line-height: 25px;
 }
@@ -239,7 +239,6 @@ nav {
 }
 
 .feature {
-   
     padding: 70px 0;
 
     @include titleText;
@@ -315,10 +314,12 @@ nav {
         @include contentWidth;
 
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 0.7rem;
+        // row-gap: 2rem;
         .single-service {
-            flex-basis: 48%;
+            flex-basis: 50%;
             text-align: justify;
             background-repeat: 7px;
             margin-bottom: 20px;
@@ -329,7 +330,7 @@ nav {
                 border-radius: 7px;
             }
             &::after {
-                content: '';
+                content: "";
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -348,6 +349,8 @@ nav {
                 position: absolute;
                 bottom: 0;
                 left: 50%;
+                // top: 50%;
+                // transform: translateY(50%);
                 opacity: 0;
                 transform: translateX(-50%);
                 z-index: 1;
@@ -364,7 +367,8 @@ nav {
                 }
             }
             &:hover .service-desc {
-                bottom: 40%;
+                bottom: 50%;
+                transform: translate(-50%, 50%);
                 opacity: 1;
                 color: #ffffff;
             }
@@ -373,15 +377,14 @@ nav {
 }
 
 @media screen and (max-width: 770px) {
-    .service-box .single-service {
-        flex-basis: 100%;
-        margin-bottom: 30px;
-        .service-desc hr {
-            margin: 5px auto;
-        }
-        
-        &:hover .service-desc {
-            bottom: 26%;
+    .service .service-box {
+        flex-wrap: wrap;
+        .single-service {
+            flex-basis: 100%;
+            margin-bottom: 30px;
+            .service-desc hr {
+                margin: 5px auto;
+            }
         }
     }
 }
