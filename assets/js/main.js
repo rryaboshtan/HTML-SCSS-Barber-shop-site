@@ -6,11 +6,11 @@ nav.style.right = "-250px";
 const showHideNav = () => {
     if (nav.style.right === '-250px') {
         nav.style.right = '0'
-        menu.src = 'assets/img/close.png'
+        menu.src = 'assets/img/close.webp'
     }
     else {
         nav.style.right = '-250px'
-        menu.src = 'assets/img/menu.png'
+        menu.src = 'assets/img/menu.webp'
     }
 }
 
