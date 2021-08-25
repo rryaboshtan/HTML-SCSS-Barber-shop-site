@@ -6,10 +6,10 @@ nav.style.right = "-250px";
 const showHideNav = () => {
    if (nav.style.right === "-250px") {
       nav.style.right = "0";
-      menu.src = "assets/img/close.webp";
+      menu.src = "https://rryaboshtan.github.io/HTML-SCSS-Barber-shop-site/assets/img/close.webp";
    } else {
       nav.style.right = "-250px";
-      menu.src = "assets/img/menu.webp";
+      menu.src = "https://rryaboshtan.github.io/HTML-SCSS-Barber-shop-site/assets/img/menu.webp";
    }
 };
 
