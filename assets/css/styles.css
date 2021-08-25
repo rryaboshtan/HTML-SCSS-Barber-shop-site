@@ -1,9 +1,10 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins normal";
+  font-family: "Poppins-Regular";
 }
 
 @font-face {
@@ -23,11 +24,17 @@
 }
 
 @font-face {
-  font-family: "Poppins normal";
+  font-family: 'Poppins-Regular';
+  src: local("☺"), url("../webfonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/Poppins-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: local("☺"), url("../webfonts/KaushanScript-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .fa,
@@ -132,7 +139,7 @@ body {
 
 .banner-text h1 {
   font-size: 130px;
-  font-family: "Kaushan Script", cursive;
+  font-family: 'KaushanScript-Regular';
 }
 
 .banner-text p {
