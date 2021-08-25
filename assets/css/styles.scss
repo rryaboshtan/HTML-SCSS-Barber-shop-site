@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 @font-face {
@@ -104,7 +104,7 @@ body {
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -120,7 +120,7 @@ body {
         padding-top: 180px;
         h1 {
             font-size: 130px;
-            font-family: 'Kaushan Script', cursive;
+            font-family: "Kaushan Script", cursive;
         }
         p {
             margin-top: 80px;
@@ -203,6 +203,9 @@ nav {
     body {
         font-size: 1.2rem;
     }
+    .banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner-medium.webp);
+    }
     .banner-text {
         h1 {
             // font-size: 130px;
@@ -218,7 +221,10 @@ nav {
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 420px) {
+    .banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner-small.webp);
+    }
     .banner-text h1 {
         font-size: 80px;
         line-height: 80px;
@@ -502,6 +508,7 @@ nav {
     @include titleText;
     &-img {
         max-width: 370px;
+        min-width: 350px;
         opacity: 0.1;
         position: absolute;
         left: 50%;

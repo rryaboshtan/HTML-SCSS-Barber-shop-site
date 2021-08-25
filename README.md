@@ -1,5 +1,5 @@
 ## Used technologies
-    - HTML, SCSS, Bootstrap
+    - HTML, SCSS
     - Responsive markup
 ## [Demo version](https://rryaboshtan.github.io/FashionDemo2/)
 
