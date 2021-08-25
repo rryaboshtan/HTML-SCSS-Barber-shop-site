@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 @font-face {
@@ -92,9 +93,9 @@ img {
     height: auto;
 }
 body {
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
     font-size: 1.1rem;
-    line-height: 25px;
+    // line-height: 25px;
 }
 
 @mixin contentWidth() {
@@ -119,6 +120,7 @@ body {
         padding-top: 180px;
         h1 {
             font-size: 130px;
+            font-family: 'Kaushan Script', cursive;
         }
         p {
             margin-top: 80px;
@@ -173,6 +175,9 @@ nav {
         a {
             text-decoration: none;
             color: #ffffff;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -198,12 +203,39 @@ nav {
     body {
         font-size: 1.2rem;
     }
-    .banner-text h1 {
-        font-size: 80px;
+    .banner-text {
+        h1 {
+            // font-size: 130px;
+            margin-top: 150px;
+        }
+        p {
+            margin-top: 40px;
+        }
     }
     .banner-btn a {
         display: block;
         margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .banner-text h1 {
+        font-size: 80px;
+        line-height: 80px;
+        padding-right: 9px;
+        margin-top: 30px;
+        // padding: 0/ 12px;
+    }
+    .banner .banner-text {
+        h1 {
+            font-size: 80px;
+        }
+        p {
+            margin-top: 40px;
+        }
+    }
+    .banner-btn {
+        margin: 50px;
     }
 }
 @mixin titleText {
@@ -380,12 +412,29 @@ nav {
     .service .service-box {
         flex-wrap: wrap;
         .single-service {
-            flex-basis: 100%;
-            margin-bottom: 30px;
+            flex-basis: 49%;
             .service-desc hr {
                 margin: 5px auto;
             }
         }
+    }
+    .service .service-box .single-service {
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .service .service-box {
+        flex-wrap: wrap;
+        .single-service {
+            flex-basis: 100%;
+            .service-desc hr {
+                margin: 5px auto;
+            }
+        }
+    }
+    .service .service-box .single-service {
+        margin-bottom: 6px;
     }
 }
 
@@ -434,7 +483,8 @@ nav {
         }
         &:hover {
             // transform: translateY(7px);
-            transform: scale(1.04);
+            // transform: scale(1.04);
+            box-shadow: 0 10px 30px 3px rgba(0, 150, 136, 0.5), 0 -2px 30px 3px rgba(0, 150, 136, 0.5);
         }
     }
 }
@@ -503,7 +553,7 @@ nav {
             &:hover {
                 background-color: #009688;
                 color: #ffffff;
-                transform: translateY(-7px);
+                // transform: translateY(-7px);
             }
         }
         p {
