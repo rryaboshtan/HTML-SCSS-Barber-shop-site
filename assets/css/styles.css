@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins-Regular";
+  font-size: .95rem;
 }
 
 @font-face {
@@ -26,6 +27,7 @@
 @font-face {
   font-family: 'Poppins-Regular';
   src: local("☺"), url("../webfonts/Poppins-Regular.woff") format("woff");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -33,6 +35,7 @@
 @font-face {
   font-family: 'KaushanScript-Regular';
   src: local("☺"), url("../webfonts/KaushanScript-Regular.woff") format("woff");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -111,7 +114,6 @@ img {
 
 body {
   letter-spacing: 0.5px;
-  font-size: 1.1rem;
 }
 
 .banner {
@@ -637,7 +639,7 @@ nav .menuBtn img {
 }
 
 .testimonial-col p {
-  font-size: 19px;
+  font-size: .85rem;
 }
 
 .testimonial-col .user {
