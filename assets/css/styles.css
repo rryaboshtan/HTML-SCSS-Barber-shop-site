@@ -3,7 +3,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins normal";
 }
 
 @font-face {
@@ -20,6 +20,14 @@
   font-weight: 900;
   font-display: block;
   src: url("../webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins normal";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/Poppins-Regular.ttf") format("ttf");
 }
 
 .fa,
