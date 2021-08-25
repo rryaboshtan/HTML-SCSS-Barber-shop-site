@@ -2,7 +2,7 @@
    "version": "1.0.0",
    "description": "- HTML, SCSS\r     - Responsive markup\r ## [Demo version](https://rryaboshtan.github.io/FashionDemo2/)",
    "main": "index.js",
-   "homepage": "https://rryaboshtan.github.io/BarberShop",
+   "homepage": "https://rryaboshtan.github.io/HTML-SCSS-Barber-shop-site/",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "deploy": "gh-pages -d dist"
