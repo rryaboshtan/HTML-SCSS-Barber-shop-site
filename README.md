@@ -1,7 +1,7 @@
 ## Used technologies
     - HTML, SCSS
     - Responsive markup
-## [Demo version](https://rryaboshtan.github.io/FashionDemo2/)
+## [Demo version](https://rryaboshtan.github.io/HTML-SCSS-Barber-shop-site/)
 
 ### Screenshots
 ![](assets/screenshots/screenshot1.png)
