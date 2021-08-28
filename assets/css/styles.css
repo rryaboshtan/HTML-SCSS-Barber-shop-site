@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins-Regular";
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 @font-face {
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
   src: local("☺"), url("../webfonts/Poppins-Regular.woff") format("woff");
   font-display: swap;
   font-weight: normal;
@@ -33,7 +33,7 @@
 }
 
 @font-face {
-  font-family: 'KaushanScript-Regular';
+  font-family: "KaushanScript-Regular";
   src: local("☺"), url("../webfonts/KaushanScript-Regular.woff") format("woff");
   font-display: swap;
   font-weight: normal;
@@ -141,7 +141,7 @@ body {
 
 .banner-text h1 {
   font-size: 130px;
-  font-family: 'KaushanScript-Regular';
+  font-family: "KaushanScript-Regular";
 }
 
 .banner-text p {
@@ -190,6 +190,13 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 250px;
   height: 100vh;
   position: fixed;
@@ -202,17 +209,14 @@ nav {
   transition: 0.5s;
 }
 
-nav ul li {
-  list-style: none;
-  margin: 50px 20px;
-}
-
-nav ul li a {
+nav a {
+  padding-left: 20px;
+  padding-top: 50px;
   text-decoration: none;
   color: #ffffff;
 }
 
-nav ul li a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -639,7 +643,7 @@ nav .menuBtn img {
 }
 
 .testimonial-col p {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .testimonial-col .user {

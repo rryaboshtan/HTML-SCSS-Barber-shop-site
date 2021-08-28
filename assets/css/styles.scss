@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins-Regular";
-     font-size: .95rem;
+    font-size: 0.95rem;
 }
 
 @font-face {
@@ -23,19 +23,19 @@
 }
 
 @font-face {
-	font-family: 'Poppins-Regular';
-	src: local('☺'), url('../webfonts/Poppins-Regular.woff') format('woff');
+    font-family: "Poppins-Regular";
+    src: local("☺"), url("../webfonts/Poppins-Regular.woff") format("woff");
     font-display: swap;
-	font-weight: normal;
-	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'KaushanScript-Regular';
-	src: local('☺'), url('../webfonts/KaushanScript-Regular.woff') format('woff');
+    font-family: "KaushanScript-Regular";
+    src: local("☺"), url("../webfonts/KaushanScript-Regular.woff") format("woff");
     font-display: swap;
-	font-weight: normal;
-	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .fa,
@@ -111,7 +111,6 @@ img {
 }
 body {
     letter-spacing: 0.5px;
-   
 }
 
 @mixin contentWidth() {
@@ -136,7 +135,7 @@ body {
         padding-top: 180px;
         h1 {
             font-size: 130px;
-            font-family: 'KaushanScript-Regular';
+            font-family: "KaushanScript-Regular";
         }
         p {
             margin-top: 80px;
@@ -177,6 +176,8 @@ body {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -185,15 +186,14 @@ nav {
     background-color: #009688;
     z-index: 2;
     transition: 0.5s;
-    ul li {
-        list-style: none;
-        margin: 50px 20px;
-        a {
-            text-decoration: none;
-            color: #ffffff;
-            &:hover {
-                text-decoration: underline;
-            }
+
+    a {
+        padding-left: 20px;
+        padding-top: 50px;
+        text-decoration: none;
+        color: #ffffff;
+        &:hover {
+            text-decoration: underline;
         }
     }
 
@@ -473,7 +473,7 @@ nav {
         cursor: pointer;
         transition: 0.5s;
         p {
-            font-size: .85rem;
+            font-size: 0.85rem;
         }
         .user {
             display: flex;
