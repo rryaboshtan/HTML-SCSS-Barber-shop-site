@@ -1,3 +1,4 @@
+$main-color: #009688;
 * {
     box-sizing: border-box;
     padding: 0;
@@ -119,7 +120,7 @@ body {
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), $main-color), url(../img/banner.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -183,7 +184,7 @@ nav {
     position: fixed;
     right: -250px;
     top: 0;
-    background-color: #009688;
+    background-color: $main-color;
     z-index: 2;
     transition: 0.5s;
 
@@ -200,7 +201,7 @@ nav {
     .menuBtn {
         width: 50px;
         height: 50px;
-        background-color: #009688;
+        background-color: $main-color;
         text-align: center;
         position: fixed;
         right: 30px;
@@ -220,7 +221,7 @@ nav {
         font-size: 1.2rem;
     }
     .banner {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner-medium.webp);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), $main-color), url(../img/banner-medium.webp);
     }
     .banner-text {
         h1 {
@@ -239,7 +240,7 @@ nav {
 
 @media screen and (max-width: 420px) {
     .banner {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../img/banner-small.webp);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), $main-color), url(../img/banner-small.webp);
     }
     .banner-text h1 {
         font-size: 80px;
@@ -266,7 +267,7 @@ nav {
         p {
             margin: auto;
             font-size: 20px;
-            color: #009688;
+            color: $main-color;
             font-weight: bold;
             position: relative;
             z-index: 1;
@@ -307,7 +308,7 @@ nav {
                 text-align: center;
                 margin-bottom: 10px;
                 font-weight: 100;
-                color: #009688;
+                color: $main-color;
             }
             &-desc {
                 display: flex;
@@ -320,7 +321,7 @@ nav {
                     height: 30px;
                     font-size: 30px;
                     line-height: 50px;
-                    color: #009688;
+                    color: $main-color;
                 }
                 .feature-text {
                     p {
@@ -371,7 +372,7 @@ nav {
             text-align: justify;
             background-repeat: 7px;
             margin-bottom: 20px;
-            color: #fff;
+            color: #ffffff;
             position: relative;
             img {
                 width: 100%;
@@ -385,7 +386,7 @@ nav {
                 top: 0;
                 border-radius: 7px;
                 cursor: pointer;
-                background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+                background: linear-gradient(rgba(0, 0, 0, 0.5), $main-color);
                 opacity: 0;
                 transition: 1s;
             }
@@ -405,7 +406,7 @@ nav {
                     text-align: center;
                 }
                 hr {
-                    background: #fff;
+                    background: #ffffff;
                     height: 2px;
                     border: 0;
                     margin: 15px auto;
@@ -491,7 +492,7 @@ nav {
                     font-size: 20px;
                 }
                 small {
-                    color: #009688;
+                    color: $main-color;
                 }
             }
         }
@@ -539,7 +540,7 @@ nav {
         margin-bottom: 20px;
         .fa {
             font-size: 20px;
-            color: #009688;
+            color: $main-color;
         }
     }
     &-right {
@@ -558,13 +559,13 @@ nav {
             width: 40px;
             font-size: 20px;
             line-height: 40px;
-            border: 1px solid #009688;
+            border: 1px solid $main-color;
             margin: 40px 5px 0;
-            color: #009688;
+            color: $main-color;
             cursor: pointer;
             transition: 0.5s;
             &:hover {
-                background-color: #009688;
+                background-color: $main-color;
                 color: #ffffff;
             }
         }
