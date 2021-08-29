@@ -132,7 +132,7 @@ body {
     }
     &-text {
         text-align: center;
-        color: #ffffff;
+        color: white;
         padding-top: 180px;
         h1 {
             font-size: 130px;
@@ -151,8 +151,8 @@ body {
             display: inline-block;
             margin: 0 10px;
             padding: 12px 0;
-            color: #ffffff;
-            border: 0.5px solid #ffffff;
+            color: white;
+            border: 0.5px solid white;
             position: relative;
             z-index: 0;
             transition: color 0.5s;
@@ -162,7 +162,7 @@ body {
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: #ffffff;
+                background-color: white;
                 z-index: -1;
                 transition: 0.5s;
             }
@@ -192,7 +192,7 @@ nav {
         padding-left: 20px;
         padding-top: 50px;
         text-decoration: none;
-        color: #ffffff;
+        color: white;
         &:hover {
             text-decoration: underline;
         }
@@ -276,7 +276,7 @@ nav {
                 content: "";
                 width: 50px;
                 height: 35px;
-                background: linear-gradient(#019587, #ffffff);
+                background: linear-gradient(#019587, white);
                 position: absolute;
                 top: -20px;
                 left: 0;
@@ -372,7 +372,7 @@ nav {
             text-align: justify;
             background-repeat: 7px;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: white;
             position: relative;
             img {
                 width: 100%;
@@ -406,7 +406,7 @@ nav {
                     text-align: center;
                 }
                 hr {
-                    background: #ffffff;
+                    background: white;
                     height: 2px;
                     border: 0;
                     margin: 15px auto;
@@ -417,7 +417,7 @@ nav {
                 bottom: 50%;
                 transform: translate(-50%, 50%);
                 opacity: 1;
-                color: #ffffff;
+                color: white;
             }
         }
     }
@@ -566,7 +566,7 @@ nav {
             transition: 0.5s;
             &:hover {
                 background-color: $main-color;
-                color: #ffffff;
+                color: white;
             }
         }
         p {
